@@ -10,6 +10,7 @@ public class ServiceHelper {
 
 	@Autowired
 	private MessageSource messageSource;
+	//This is the latest comment added in ServiceHelper class
 
 	public String getLocalizedMessage(String errorCode) {
 		return messageSource.getMessage(errorCode, null, LocaleContextHolder.getLocale());
